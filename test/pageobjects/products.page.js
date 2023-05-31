@@ -24,7 +24,18 @@ class productsPage {
     }
 
     get btnPriceDescending () {
-        return $('priceDesc')
+        return $('~priceDesc')
+    }
+
+    checkArray(array) {
+        var aa = array.slice(1);
+        if (aa.every((a, i) => array[i] <= a)) {
+            return "Ascending";
+        }
+        if (aa.every((a, i) => array[i] >= a)) {
+            return "Descending";
+        }
+        return "Unsorted";
     }
 }
 

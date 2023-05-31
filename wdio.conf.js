@@ -27,6 +27,7 @@ exports.config = {
     //
     specs: [
         './test/specs//login.spec.js',
+        './test/specs//filter.product.spec.js',
         './test/specs//checkout.spec.js'
         // ToDo: define location for spec files here
     ],
