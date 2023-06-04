@@ -3,6 +3,10 @@ class productsPage {
         return $('//android.view.ViewGroup[@content-desc="container header"]/android.widget.TextView')
     }
 
+    get iconCart () {
+        return $('//android.view.ViewGroup[@content-desc="cart badge"]')
+    }
+
     get productName () {
         return $('(//android.widget.TextView[@content-desc="store item text"])[1]')
     }

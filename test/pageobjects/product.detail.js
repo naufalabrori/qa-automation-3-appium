@@ -4,7 +4,11 @@ class productDetails {
     }
 
     get iconCart () {
-        return $('//android.view.ViewGroup[@content-desc="cart badge"]/android.widget.ImageView')
+        return $('//android.view.ViewGroup[@content-desc="cart badge"]')
+    }
+
+    get numberInCart () {
+        return $('//android.view.ViewGroup[@content-desc="cart badge"]/android.widget.TextView')
     }
 }
 
